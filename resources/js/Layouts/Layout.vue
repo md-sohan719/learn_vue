@@ -3,16 +3,17 @@ import { Link } from '@inertiajs/vue3';
 </script>
 <template>
     <div>
-        <header class="bg-indigo-500 text-white">
-            <nav class="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
-                <h1> {{ $page.props.auth.user }} </h1>
+        <header class="bg-slate-800 shadow-md">
+            <nav class="p-5 max-w-screen-lg mx-auto flex items-center justify-between">
                 <div class="space-x-6">
-                    <Link :href="route('home')">Home</Link>
-                    <Link :href="route('about')">About</Link>
+                    <Link :href="route('home')" class="text-slate-200 hover:bg-slate-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</Link>
+                </div>
+                <div class="space-x-6">
+                    <Link :href="route('register')" class="text-slate-200 hover:bg-slate-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Register</Link>
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="max-w-screen-lg mx-auto p-5">
             <slot></slot>
         </main>
     </div>

@@ -1,5 +1,5 @@
 <script setup></script>
 <template>
     <Head :title="` | ${$page.component}`" />
-    <Link class="mt-[1400px] block" :href="route('home')" preserve-scroll>Refresh</Link>
+    <h1 class="text-3xl font-bold">Welcome to the Home Page</h1>
 </template>
